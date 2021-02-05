@@ -1,0 +1,65 @@
+
+/*-------------------- inicio footer ----------------------*/
+
+footer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    padding: 24px 5% 31px;
+    .footer--detail {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 100%;
+        min-width: 320px;
+        .footer--subtitle {
+            min-width: 230px;
+            margin-top: 0;
+            margin-bottom: 16px;
+            font-family: $font-paragraph;
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+            color: $color-font;
+            text-align: center;
+        }
+        .footer--container {
+            .footer--icon {
+                padding-right: 38px;
+                font-size: 1.6rem;
+                line-height: 2.8rem;
+                color: $color-font;
+                &:last-of-type {
+                padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+/*-------------------- fin footer ----------------------*/
+
+/*---------------------- media querie 1024 footer ------------------------*/
+
+@media screen and (min-width: 1024px) {
+    footer {
+        .footer--detail {
+            flex-direction: row;
+            justify-content: space-between;
+            .footer--subtitle {
+                font-size: 1.6rem;
+                line-height: 2.8rem;
+            }
+            .footer--container {
+                .footer--icon {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
+
+/*---------------------- fin media querie footer ------------------------*/
+
+

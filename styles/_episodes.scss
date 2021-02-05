@@ -1,0 +1,95 @@
+
+/*-------------------- inicio episodes ----------------------*/
+main {
+    .main-episodes--bg {
+        position: relative;
+        &::after{
+            display: block;
+            background: $bg-gradient;
+            position: absolute;
+            content:'';
+            top: 0;
+            left: 0;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            transform: skewY(-5deg);
+        }
+    }
+    .main-episodes--detail {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        min-width: 320px;
+        height: 1235px;
+        padding: 20px 16px;
+        .episodes--subtitle,
+        .episodes--container {
+            position: relative;
+            z-index: 2;
+        }
+        .episodes--subtitle {
+            width: 90%;
+            min-width: 288px;
+            margin-top: 44px;
+            margin-bottom: 21px;
+            font-family: $font-titles;
+            font-size: 3.6rem;
+            font-weight: 400;
+            line-height: 4.2rem;
+            color:$color-title-background;
+        }
+        .episodes--container {
+            display: flex;
+            flex-direction: column;
+            min-width: 288px;
+            margin: 0 auto;
+            .episodes--podcast-link {
+                iframe {
+                    width: 100%;
+                    height: 232px;
+                    margin-bottom: 16px;
+                    line-height: 0;
+                    border: 0;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+/*-------------------- fin episodes ----------------------*/
+
+/*--------------------- media querie 1024px episodes -----------------------*/
+
+@media screen and (min-width: 1024px) {
+    main {
+        .main-episodes--detail {
+            height: 950px;
+            .episodes--subtitle {
+                margin-top: 100px;
+                margin-bottom: 26px;
+                font-size: 4.8rem;
+                line-height: 6.2rem;
+                text-align: left;
+            }
+            .episodes--container {
+                display: flex;
+                flex-direction: unset;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .episodes--podcast-link {
+                    width: 47%;
+                    max-width: 584px;
+                    margin-top: 54px;
+                }
+            }
+        }
+    }
+}
+
+/*--------------------- fin media querie episodes -----------------------*/
+
+

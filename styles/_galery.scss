@@ -1,0 +1,56 @@
+
+/*--------------------- incio galery ----------------------*/
+
+.main-galery--detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    .galery--subtitle {
+        width: 90%;
+        min-width: 288px;
+        margin: 54px 16px 14px;
+        font-family: $font-titles;
+        font-size: 3.6rem;
+        font-weight: 400;
+        line-height: 4.2rem;
+        color: $color-font;
+    }
+    .galery--container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        .galery--box-image {
+            position: relative;
+            width: 100%;
+            max-width: 480px;
+            .galery--img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;    
+            }
+        }
+    }
+}
+
+/*--------------------- fin galery ----------------------*/
+
+
+/*---------------------- media querie 1024 galery ------------------------*/
+
+@media screen and (min-width: 1024px) {
+    main {
+        .main-galery--detail {
+            .galery--subtitle {
+                margin-bottom: 36px;
+                font-size: 4.8rem;
+                line-height: 6.2rem;
+            }
+        }
+    }
+}
+
+
+/*---------------------- media querie galery ------------------------*/
+

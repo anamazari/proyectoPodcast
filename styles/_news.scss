@@ -1,0 +1,80 @@
+
+/*------------------------- inicio news ------------------------*/
+main {
+    .main-news--bg {
+        background: $bg-gradient;
+        clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+        padding-bottom: 67px;
+        z-index: -1;
+    }
+    .main-news--detail {
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 100%;
+        min-width: 320px;
+        .news--subtitle,
+        .news--button {
+            position: relative;
+            z-index: 2;
+        }
+        .news--subtitle {
+            width: 90%;
+            min-width: 288px;;
+            padding-top: 64px;
+            font-family: $font-titles;
+            font-size: 3.6rem;
+            font-weight: 400;
+            line-height: 4.2rem;
+            color: $color-title-background;
+            text-align: center;
+        }
+        .news--button {
+            display: block;
+            align-self: center;
+            width: 100%;
+            max-width: 288px;
+            height: 48px;
+            margin-top: 36px;
+            padding: 13px 40px;
+            background-color:$color-button;
+            font-family: $font-paragraph;
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 2.2rem;
+            color: $color-font;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: none;
+            outline: none;
+    
+            &:hover {
+                background: $hover-gradient;
+                color: $color-title-background;
+            }
+        }
+    }
+}
+
+/*------------------------- fin news ------------------------*/
+
+/*------------------ media querie 1024px news -----------------------*/
+
+@media screen and (min-width: 1024px) {
+    main {
+        .main-news--detail {
+            .news--subtitle {
+                font-size: 4.8rem;
+                line-height: 6.2rem;
+            }
+            .news--button {
+                padding: 10px 30px;
+                font-size: 1.8rem;
+                line-height: 2.4rem;
+            }
+        }
+    }    
+}
+
+/*------------------ fin media querie news -----------------------*/

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="menu-hamburguesa">
+        <meta name="author" content="Ana Zapata">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600&family=IBM+Plex+Sans:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+        <title>Podcast Acámica</title>
+    </head>
+    <body>
+        <header>
+            <img src="./assets/iconos-logo/logo.svg" alt="Podcast channel acamica logo">
+            <nav>
+                <div class="menu-hamburguer">
+                    <input type="checkbox" class="toogler" id="checkbox">
+                    <div class=hamburguer><div></div></div>
+                    <ul class="menu-list">
+                        <li><a href="#episodios">Episodios</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#entrevistas">Entrevistas</a></li>
+                        <li><a href="#topicos">Tópicos</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class= hero>
+                <div class="hero--title-container">
+                    <h1>Hello <del>world</del> pale blue dot <span>.</span></h1>
+                    <p>Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
+                    <a class="hero--button" href="#nosotros">Conocé más</a>
+                </div>
+            </section>
+            <div class="main-episodes--bg">
+            <section id="episodios" class="main-episodes--detail">
+                <h2 class="episodes--subtitle">Episodios</h2>
+                <div class="episodes--container">
+                    <div class="episodes--podcast-link">
+                        <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" 
+                        allow="encrypted-media"></iframe>
+                    </div>
+                    <div class="episodes--podcast-link">
+                        <iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" 
+                        allow="encrypted-media"></iframe>
+                    </div>
+                    <div class="episodes--podcast-link">
+                        <iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" 
+                        allow="encrypted-media"></iframe>
+                    </div>
+                    <div class="episodes--podcast-link">
+                        <iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" 
+                        allow="encrypted-media"></iframe>
+                    </div>    
+                </div>
+            </section>
+            </div>
+            <section id="nosotros" class="main-info--detail">
+                <figure class="info--img">
+                    <img class="img--phone" src="./assets/fotos/phone.png" alt="Imagen phone">
+                </figure>>
+                <div class="info--container">
+                    <h2 class="info--subtitle">De dónde venimos</h2>
+                    <p>
+                        Our posturings, our imagined self-importance,the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.
+                    </p>
+                    
+                    <p>
+                        Our planet is a lonely speck in the enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+                    </p>
+                </div>
+            </section>
+            <section id="entrevistas" class="main-galery--detail">
+                <h2 class="galery--subtitle">Invitadas/os estelares</h2>
+                <div class="galery--container">
+                    <figure class="galery--box-image">
+                        <img class="galery--img" src="./assets/fotos/grace-hopper.png" alt="Grace Hopper">
+                    </figure>
+                    <figure class="galery--box-image">
+                        <img class="galery--img" src="./assets/fotos/katie-bouman.png" alt="Katie Bouman">
+                    </figure>
+                    <figure class="galery--box-image">
+                        <img class="galery--img" src="./assets/fotos/margaret-hamilton.png" alt="Margaret Hamilton">
+                    </figure>
+                    <figure class="galery--box-image">
+                        <img class="galery--img" src="./assets/fotos/era-Univac-1103-computer.png" alt="E.R.A.Univac">
+                    </figure>
+                    <figure class="galery--box-image">
+                        <img class="galery--img" src="./assets/fotos/computer-operators-with-an-Eniac..png" alt="Operators Eniac">
+                    </figure>
+                    <figure class="galery--box-image">
+                        <img class="galery--img" src="./assets/fotos/susan-kare.png" alt="Susan Kare">
+                    </figure> 
+                </div> 
+            </section>
+            <section id="topicos" class="main-icons--detail">
+                <h2 class="icons--subtitle">Algunos de nuestros temas</h2>
+                <div class="icons-group--container">
+                    <div class="icon--box-image"> 
+                        <img class="icon--img" src="./assets/iconos-logo/remote-work.svg" alt="Icono trabajo remoto">
+                        <h3 class="icon-img--subtitle">Trabajo remoto</h3>
+                    </div>
+                    <div class="icon--box-image">
+                        <img class="icon--img" src="./assets/iconos-logo/programming.svg" alt="Icono repensando la programacion">
+                        <h3 class="icon-img--subtitle">Repensando la programación</h3>
+                    </div>
+                    <div class="icon--box-image">
+                        <img class="icon--img" src="./assets/iconos-logo/computer.svg" alt="Icono bases del codigo">
+                        <h3 class="icon-img--subtitle">Bases del código</h3>
+                    </div> 
+                    <div class="icon--box-image"> 
+                        <img class="icon--img" src="./assets/iconos-logo/security.svg" alt="Icono seguridad informatica">
+                        <h3 class="icon-img--subtitle">Seguridad informática</h3>
+                    </div>
+                </div>
+            </section>
+            <div class="main-news--bg">
+                <section class="main-news--detail">
+                    <h2 class="news--subtitle">¿Querés las últimas novedades?</h2>
+                    <a class="news--button" href="#episodios">Escuchá los episodios</a>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <section class="footer--detail">
+                <h4 class="footer--subtitle">2019- Hello blue pale dot</h4>
+                <div class="footer--container">
+                    <a class="footer--icon" href="https://www.spotify.com/co/" target="_blank"><i class="fab fa-spotify"></i></a>
+                    <a class="footer--icon" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a class="footer--icon" href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="footer--icon" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a class="footer--icon" href="https://web.telegram.org/#/login" target="_blank"><i class="fab fa-telegram"></i></a>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>
